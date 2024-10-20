@@ -4,12 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherApp</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav.png">
     <!-- css all link here  -->
-     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
     <!-- css all link here  -->
 </head>
 <body>
-    
+    <!-- weather app part start here  -->
+     <section id="weather">
+        <div class="weather_main">
+            <div class="serach_box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="enter you location">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+
+            <div class="weather_box">
+                <div class="box">
+                    <div class="ifo_weather">
+                        <div class="weather">
+                            <img id="image" src="./images/cloudy.png" alt="cloudy">
+                            <p class="temperature">0 <span>°C</span></p>
+                            <p class="driscription">Broken Clouds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather_detelis">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                        <div class="hu_info">
+                            <span>0%</span>
+                        </div>
+                        <p>humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <div class="hu_wind">
+                            <span>km/h</span>
+                        </div>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="notFound">
+                <div class="box">
+                    <img src="./images/notFound.jpg" alt="notFound">
+                </div>
+                <p>Location is not Found</p>
+            </div>
+        </div>
+     </section>
+    <!-- weather app part end here  -->
 
     <!-- js all link here  -->
      <script src="./js/main.js"></script>
